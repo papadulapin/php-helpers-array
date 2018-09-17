@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 $user = [
 	'name' => 'helloworld',
@@ -51,13 +51,11 @@ dump($user);
 dump(array_has($user, ['topics.1.title', 'country.name']));
 */
 
-
 /*//array_where
 $users = array_where($users, function ($user, $key) {
 	return array_get($user, 'score') > 100;
 });
 dump($users);*/
-
 
 /*
 //array_only example
